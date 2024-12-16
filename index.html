@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: brown;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: yellow;
+            text-shadow: 3px 3px 3px black
+        }
+
+        header {
+            text-align: center;
+            padding: 35px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 400px;
+            background-image: url(images/fondo.png);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        header div h1 {
+            font-size: 5em;
+            color: yellow;
+            text-shadow: 2px 2px 2px black;
+        }
+        header div h2 {
+            color: white;
+            text-shadow: 1px 2px 3px black;
+        }
+
+        .titulo {
+            color: brown;
+            text-align: center;
+            border: 2px solid white;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        #contenedor-servicios {
+            display: flex;
+            border: 2px dashed blue;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .caja {
+            border: 2px solid red;
+        }
+        
+        section#servicios {
+            background-color: aquamarine;
+        }
+
+        section#obras {
+            background-color: antiquewhite;
+        }
+
+        #contenedor-obras {
+            border: 2px dashed blue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .obra {
+            width: 30%;
+            border: 2px solid red;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .obra img {
+            width: 90%;
+        }
+
+        footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #contacte {
+            width: 100%;
+            padding: 10px;
+            border-bottom: 2px solid white;
+        }
+
+        .caja-footer {
+            width: 33%;
+            border: 3px dashed red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#obras">Obras</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <header>
+        <div id="contenedor-header">
+            <h1>Ágora</h1>
+            <h2>Estudio de arquitectura</h2>
+        </div>
+    </header>
+    <section id="servicios">
+        <h1 class="titulo">Servicios</h1>
+        <div id="contenedor-servicios">
+            <div class="caja">
+                <h1>1. Diseño de interiores</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore architecto, commodi eos ipsum delectus laborum fugit hic quibusdam incidunt quas, vitae voluptatum laudantium illum reprehenderit quidem, id labore ipsam. Soluta?</p>
+
+                <h1>2. Reformas</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore architecto, commodi eos ipsum delectus laborum fugit hic quibusdam incidunt quas, vitae voluptatum laudantium illum reprehenderit quidem, id labore ipsam. Soluta?</p>
+            </div>
+
+            <div class="caja">
+                <h1>3. Demoliciones</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore architecto, commodi eos ipsum delectus laborum fugit hic quibusdam incidunt quas, vitae voluptatum laudantium illum reprehenderit quidem, id labore ipsam. Soluta?</p>
+            </div>
+        </div>
+    </section>
+    <section id="obras">
+        <h1 class="titulo">Obras</h1>
+        <div id="contenedor-obras">
+            <div class="obra">
+                <img src="images/maxresdefault.jpg" alt="">
+                <p>Sevilla</p>
+            </div>
+            <div class="obra">
+                <img src="images/maxresdefault.jpg" alt="">
+                <p>Madrid</p>
+            </div>
+            <div class="obra">
+                <img src="images/maxresdefault.jpg" alt="">
+                <p>Barcelona</p>
+            </div>
+            <div class="obra">
+                <img src="images/maxresdefault.jpg" alt="">
+                <p>Cádiz</p>
+            </div>
+            <div class="obra">
+                <img src="images/maxresdefault.jpg" alt="">
+                <p>Asturias</p>
+            </div>
+            <div class="obra">
+                <img src="images/maxresdefault.jpg" alt="">
+                <p>Valencia</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contacte">
+            <p>Contacte con nosotros. Trabajamos los 365 días del año</p>
+        </div>
+        <div class="caja-footer">
+            <h3>Enlaces</h3>
+            <a href="http://facebook.com">Facebook</a>
+            <a href="http://facebook.com">Facebook</a>
+            <a href="http://facebook.com">Facebook</a>
+        </div>
+        <div class="caja-footer">
+            <h3>Estamos en</h3>
+            <p>Avda. Los Institutos s/n</p>
+            <p>13600 Alcázar de San Juan</p>
+        </div>
+        <div class="caja-footer">
+            <h3>Email</h3>
+        </div>
+    </footer>
+</body>
+</html>
